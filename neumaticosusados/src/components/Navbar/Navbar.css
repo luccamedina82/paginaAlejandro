@@ -1,0 +1,118 @@
+.nav-container{
+    background: rgba(0, 0, 0, 0.219);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    backdrop-filter: blur(50px);
+}
+
+.nav-content{
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 12rem;
+    height: auto;
+    border-radius: 0.5rem;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.nav-content ul {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.nav-content li{
+    margin: 0 1.5rem;
+}
+
+.menu-item {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-item::before{
+    content: " ";
+    width: 2rem;
+    height: 0.2rem;
+    background: linear-gradient(90deg, #186bbe  0%, #1E90FF  100%);
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: -0.4rem;
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover::before {
+    width: 100%;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.menu-btn {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.4rem;
+    background: linear-gradient(90deg, #186bbe  0%, #1E90FF 100%);
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: none;
+}
+
+.menu-btn:hover {
+    background: linear-gradient(90deg, #1E90FF  0%, #033c75 100%);
+    border: 1px solid #fff;
+}
+
+@media (max-width: 425px) {
+    .logo {
+        width: 10rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 769px) {
+    .menu-btn{
+        display: block;
+    }
+    .nav-content ul {
+        display: none;
+    }
+}
+
+@media (max-width: 1325px) {
+    .nav-container {
+        padding: 0 2rem;
+    }
+}
+@media (max-width: 915px) {
+    .nav-content li{
+        margin: 0 0.86rem;
+    }
+    .nav-content ul {
+        gap: 0rem;
+    }
+    .menu-item{
+        font-size: 0.9rem;
+    }
+}

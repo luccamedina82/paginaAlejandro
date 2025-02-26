@@ -1,0 +1,47 @@
+.vista-container{
+    position: relative;
+    margin: 1rem 0;
+    max-width: 100%;
+}
+
+.vista-container::after, 
+.vista-container::before{
+    content: " ";
+    width: 40.125rem;
+    height: 40.125rem;
+    border-radius: 28.125rem;
+    background: #186bbe;
+    position: absolute;
+    z-index: -1;
+    filter: blur(255px)
+}
+
+.vista-container::after{
+    top: 0rem;
+    left: 0rem;
+}
+
+.vista-container::before{
+    bottom: 0rem;
+    right: 0rem;
+}
+
+.banner{ 
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+@media (max-width: 1300px) {
+    .banner{
+        padding: 0 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .vista-container::after, 
+    .vista-container::before{
+        content: " ";
+        width: 20rem;
+        height: 20rem;
+    }
+}

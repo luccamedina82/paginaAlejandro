@@ -1,0 +1,245 @@
+.informacion-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 4rem;
+    flex-direction: column;
+    color: #000;
+}
+
+.informacion-container h2{
+    color: #fff;
+}
+
+.informacion-container h1{
+    color: #fff;
+}
+
+.informacion-container::after, 
+.informacion-container::before{
+    content: " ";
+    width: 28.125rem;
+    height: 28.125rem;
+    border-radius: 28.125rem;
+    background: #186bbe;
+    position: absolute;
+    z-index: -1;
+    filter: blur(225px)
+}
+.informacion-container::after{
+    top: 8rem;
+    left: 0rem;
+}
+
+.informacion-container::before{
+    bottom: 2rem;
+    right: 0rem;
+}
+
+.informacion-container h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+}
+
+.informacion-container h1::after {
+    content: '';
+    display: block;
+    width: 90%; 
+    height: 3px; 
+    background-color: #fbb801; 
+    margin: 0 auto 0; 
+    border-radius: 5px; 
+}
+
+.informacion-container h2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.6rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.informacion-content{
+    margin: 1rem;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.column{
+    width: 50%;
+    display: flex;
+
+}
+
+.item-content{
+    width: 100%;
+    min-height: 23rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #ffffff28;
+    border-radius: 0.5rem;
+}
+
+.item-content h2{
+    margin-top: 2rem;
+}
+
+.contacto-content{
+    width: 100%;
+    min-height: 23rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.mail-content, .numero-content{
+    width: 97.3%;
+    min-height: 11rem;
+    background-color: #ffffff28;
+    border-radius: 0.5rem;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail-content{
+    border: 3px solid #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.mail-content:hover{
+    color: #186bbe;
+    background: transparent;
+}
+
+.mail-content a{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.item-content h2{
+    color: #fff;
+}
+.informacion-ubicacion{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.mail, .telefono, .atencion p{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.atencion{
+    width: 100%;
+    min-height: 10rem;
+    background-color: #ffffff28;
+    border-radius: 0.5rem;   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+}
+
+.atencion h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 768px) {
+
+    .informacion-container::after, 
+    .informacion-container::before{
+        content: " ";
+        width: 18rem;
+        height: 18rem;
+        filter: blur(150px)
+    }
+    .informacion-container::after{
+        top: 0rem;
+        left: 0rem;
+    }
+    
+    .informacion-container::before{
+        bottom: 0rem;
+        right: 0rem;
+    }
+    .informacion-container h2{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .mail-content a{
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media (max-width: 890px) {
+    .informacion-container h1{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .informacion-container{
+        padding: 0.5rem;
+    }
+}
+
+
+@media (max-width: 560px){
+    .informacion-container h1{
+        font-size: 1.5rem;
+        letter-spacing: 0rem;
+        margin-bottom: 2.5rem;
+    }
+    .mail-content a{
+        font-size: 1rem;
+    }
+    .informacion-container h2{
+        font-size: 1rem;
+    }
+    .mail, .telefono, .atencion p{
+        font-size: 0.7rem;
+    }
+    .informacion-ubicacion{
+        font-size: 0.7rem;
+    }
+    .informacion-container{
+        margin-top: 2rem;
+    }
+}
+
+
+@media (max-width: 425px){
+    .informacion-container h1{
+        font-size: 1.4rem;
+        letter-spacing: -0.04rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 375px){
+    .informacion-container h1{
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,76 @@
+.resenia-card-container{
+    width: 95%;
+    height: 17rem;
+    background-color: #ffffff2f;
+    color: #fff;
+    border-radius: 5px; 
+    padding: 1.5rem;
+}
+
+.resenia-card-content{
+    padding: 1rem 1.2rem;
+}
+
+
+.card-title{
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+}
+
+.starRating{
+    margin-top: 0.5rem;
+}
+
+.card-title img {
+    height: 100%;
+}
+
+.nombre{
+    font-size: 1.2rem;
+    letter-spacing: 0.1px
+}
+
+
+.resenia-text {
+    margin-top: 1.3rem;
+    font-size: 0.8rem;
+}
+
+.estrellas-nombre-content{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 1rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+
+@media (max-width: 1270px) {
+    .nombre{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .resenia-text{
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .resenia-text{
+        font-size: 0.5rem;
+    }
+    .card-title img {
+        height: 70%;
+    }
+    .starRating{
+        margin-top: 0;
+    }
+    .resenia-card-content{
+        padding: 0.8rem 0.8rem;
+    }
+}

@@ -1,0 +1,147 @@
+.resenias-container{
+    margin: 4rem 1rem;
+    position: relative;
+}
+
+
+.resenias-container::after, 
+.resenias-container::before{
+    content: " ";
+    width: 28.125rem;
+    height: 28.125rem;
+    border-radius: 28.125rem;
+    background: #186bbe;
+    position: absolute;
+    z-index: -1;
+    filter: blur(225px)
+}
+.resenias-container::after{
+    top: 8rem;
+    left: 0rem;
+}
+
+.resenias-container::before{
+    bottom: 2rem;
+    right: 0rem;
+}
+
+.resenias-container h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+}
+
+.resenias-container h1::after {
+    content: '';
+    display: block;
+    width: 90%; 
+    height: 3px; 
+    background-color: #fbb801; 
+    margin: 0 auto 0; 
+    border-radius: 5px; 
+}
+
+.resenias-content-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-left,
+.arrow-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 64.5%;
+    z-index: 2;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.arrow-left:hover,
+.arrow-right:hover{
+    transform: scale(1.1);
+}
+
+.arrow-left img, .arrow-right img{
+    width: 2.7rem;
+}
+.arrow-left {
+    left: -0.5rem;
+}
+
+.arrow-right {
+    right: -0.5rem;
+}
+
+.experience-content{
+    width: 100%;
+    margin: 0 1rem;
+}
+
+
+.spinner-reviews{
+    position: absolute;
+    top: 1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.6rem;
+    z-index: 20;
+}
+
+
+@media (max-width: 1050px) {
+    .arrow-left {
+        left: 0rem;
+    }
+    .arrow-right {
+        right: 0rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-container h5 {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+    .arrow-left {
+        left: -1rem;
+    }
+    .arrow-right {
+        right: -1rem ;
+    }
+
+    .resenias-container::after, 
+    .resenias-container::before{
+        content: " ";
+        width: 18rem;
+        height: 18rem;
+        filter: blur(150px)
+
+    }
+    .resenias-container::after{
+        top: 0rem;
+        left: 0rem;
+    }
+    
+    .resenias-container::before{
+        bottom: 0rem;
+        right: 0rem;
+    }
+}
+
+
+@media (max-width: 560px){
+    .resenias-container{
+        margin-top: 2.3rem;
+    }
+    .resenias-container h1{
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+    }    
+}

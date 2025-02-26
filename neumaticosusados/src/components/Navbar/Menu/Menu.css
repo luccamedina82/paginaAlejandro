@@ -1,0 +1,51 @@
+.menu{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999 !important;
+    opacity: 0;
+    box-shadow: 0px 29px 80px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    transform: translateX(-100vw);
+}
+
+.menu-container{
+    width: 65vw;
+    height: 100vh;
+    background: linear-gradient(to top, #084b8f  -10%, #040025  55%);
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.menu.active{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.menu img{
+    margin-bottom: 3rem;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    margin-left: -2rem;
+}
+
+.logo-menu{
+    width: 10rem;
+    height: auto;
+    border-radius: 1rem;
+}
+
+@media (max-width: 769px) {
+    .menu {
+        display: block;
+    }
+}

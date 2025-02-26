@@ -1,0 +1,16 @@
+.floating-whatsapp-button {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 29; 
+  }
+  
+.whatsapp-button {
+    background-color: transparent;
+    background-image: url('../../assets/images/whatsapp.png'); 
+    background-size: cover;
+    width: 60px;
+    height: 60px; 
+    border: none;
+    cursor: pointer;
+}
