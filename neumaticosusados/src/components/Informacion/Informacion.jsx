@@ -35,7 +35,7 @@ const Informacion = forwardRef((props, ref) => {
               </div>
               <div className='numero-content'>
                 <h2>Teléfono</h2>
-                <p className="telefono">(0351) 155-946508 / (0351) 4806998</p>
+                <p className="telefono">(351) 594-6508  / (351) 9040707</p> 
               </div>
             </div>
           </div>
